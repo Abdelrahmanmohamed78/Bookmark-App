@@ -1,0 +1,15 @@
+.main-btn {
+  display: block;
+  color: #fff;
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color) !important;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: var(--main-transition);
+}
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}

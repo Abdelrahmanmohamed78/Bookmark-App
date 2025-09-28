@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo .logoIcon {
+  width: 25px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+.logo .logoIcon svg {
+  font-size: 12px;
+  color: #fff;
+}
+.logo .logoText {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.logo .logoText.light {
+  color: #fff;
+}
+.logo .logoText.dark {
+  color: var(--text-color);
+}

@@ -1,0 +1,15 @@
+.main-text {
+  text-align: center;
+  max-width: 450px;
+  margin: auto;
+}
+.main-text h3 {
+  color: var(--text-color);
+  font-size: 40px;
+  font-weight: 700;
+}
+.main-text p {
+  color: #a7a6ab;
+  line-height: 1.5;
+  margin: 30px 0;
+}

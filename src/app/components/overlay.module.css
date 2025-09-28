@@ -1,0 +1,76 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: none;
+  justify-content: center;
+  background-color: #2f354f;
+  z-index: 2;
+}
+.overlay.show {
+  display: flex;
+}
+.overlay .overlayHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.overlay .overlayHeader .close,
+.overlay .overlaySocial img {
+  cursor: pointer;
+}
+.overlay ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+
+.overlay ul li {
+  border-top: 1px solid #4a506a;
+}
+.overlay ul li a {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 250px;
+  max-width: 100%;
+  color: #eee;
+  font-size: 16px;
+  padding: 20px 0;
+  text-transform: uppercase;
+  transition: var(--main-transition);
+}
+.overlay ul li a.login {
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  margin: 20px 0;
+  font-weight: 500;
+}
+.overlay ul li a.login:hover {
+  border-color: var(--second-color);
+}
+.overlay ul li a:hover {
+  color: var(--second-color);
+}
+.overlay .overlaySocial {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}

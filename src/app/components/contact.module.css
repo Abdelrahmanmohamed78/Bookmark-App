@@ -1,0 +1,105 @@
+.contact {
+  position: relative;
+  padding: 60px 0;
+  background-color: var(--main-color);
+}
+.contact .holder {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #fff;
+}
+.contact .holder .joined {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+.contact .holder .text {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 35px 0 30px;
+}
+@media(max-width: 767px) {
+  .contact .holder .text {
+    font-size: 25px;
+  }
+}
+.contact .holder .emailHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media(max-width: 767px) {
+  .contact .holder .emailHolder {
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+.contact .holder .emailHolder .inputHolder {
+  position: relative;
+  z-index: 1;
+}
+.contact .holder .emailHolder .inputHolder img {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 17px;
+  height: auto;
+  transition: var(--main-transition);
+}
+.contact .holder .emailHolder .inputHolder input {
+  padding: 12px 30px 12px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  outline: none;
+  width: 300px;
+  max-width: 100%;
+}
+.contact .holder .emailHolder .inputHolder input:focus {
+  border-color: var(--second-color);
+}
+.contact .holder .emailHolder .inputHolder .errorText {
+  position: absolute;
+  opacity: 0;
+  font-style: italic;
+  width: 100%;
+  text-align: left;
+  bottom: -22px;
+  left: 0;
+  padding: 8px 8px 5px;
+  color: #fff;
+  background-color: var(--second-color);
+  font-size: 11px;
+  font-weight: 600;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+.contact .holder .emailHolder .inputHolder.error img,
+.contact .holder .emailHolder .inputHolder.error .errorText {
+  opacity: 1;
+}
+.contact .holder .emailHolder button {
+  color: #fff;
+  background-color: var(--second-color);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.contact .holder .emailHolder button:hover {
+  color: var(--second-color);
+  background-color: #fff;
+  border-color: var(--second-color);
+}

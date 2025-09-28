@@ -1,0 +1,37 @@
+.scrollTopBtn {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+  color: #fff;
+  cursor: pointer;
+  transition: var(--main-transition);
+  z-index: 2;
+}
+.scrollTopBtn.show {
+  visibility: visible;
+  opacity: 1;
+}
+.scrollTopBtn:hover {
+  background-color: var(--main-color);
+}
+
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--second-color);
+  z-index: 2;
+}

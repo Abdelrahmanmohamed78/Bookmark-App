@@ -1,0 +1,131 @@
+/* Start Not Found Page Styles */
+.not-found {
+  min-height: 100vh;
+  background-color: var(--main-color);
+  color: #fff;
+}
+.holder {
+  min-height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.eyesHolder {
+  margin-top: 70px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.eyesHolder .eye {
+  position: relative;
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.eyesHolder .eye::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: #000;
+  transition: var(--main-transition);
+}
+.eyesHolder .eye:nth-of-type(1)::before {
+  top: 20px;
+  right: 35px;
+}
+.eyesHolder .eye.enter:nth-of-type(1)::before {
+  top: 130px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.eyesHolder .eye:nth-of-type(2)::before {
+  top: 20px;
+  right: 120px;
+}
+.eyesHolder .eye.enter:nth-of-type(2)::before {
+  top: 130px;
+  right: 50%;
+  transform: translateX(50%);
+}
+@media (max-width: 992px) {
+  .eyesHolder .eye {
+    width: 200px;
+  }
+  .eyesHolder .eye::before {
+    width: 100px;
+  }
+  .eyesHolder .eye:nth-of-type(1)::before {
+    top: 20px;
+    right: 20px;
+  }
+  .eyesHolder .eye.enter:nth-of-type(1)::before {
+    top: 80px;
+  }
+  .eyesHolder .eye:nth-of-type(2)::before {
+    top: 20px;
+    right: 80px;
+  }
+  .eyesHolder .eye.enter:nth-of-type(2)::before {
+    top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .eyesHolder .eye {
+    width: 150px;
+  }
+  .eyesHolder .eye::before {
+    width: 50px;
+  }
+  .eyesHolder .eye:nth-of-type(1)::before {
+    top: 20px;
+    right: 20px;
+  }
+  .eyesHolder .eye.enter:nth-of-type(1)::before {
+    top: 80px;
+  }
+  .eyesHolder .eye:nth-of-type(2)::before {
+    top: 20px;
+    right: 80px;
+  }
+  .eyesHolder .eye.enter:nth-of-type(2)::before {
+    top: 80px;
+  }
+}
+.errorText {
+  margin: 40px 0;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.errorText p:nth-of-type(1) {
+  font-size: 130px;
+}
+.errorText p:nth-of-type(1) span {
+  color: var(--second-color);
+}
+.errorText p:nth-of-type(2) {
+  font-size: 30px;
+}
+.homeBtn {
+  color: #fff;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 25px;
+  font-size: 14px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-color: var(--second-color);
+  transition: var(--main-transition);
+}
+.homeBtn:hover {
+  color: var(--second-color);
+  background-color: #fff;
+  border-color: var(--second-color);
+
+}
+/* End Not Found Page Styles */

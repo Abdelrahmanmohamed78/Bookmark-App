@@ -1,0 +1,117 @@
+.features {
+  position: relative;
+  padding: 100px 0;
+}
+.features::before {
+  content: "";
+  position: absolute;
+  top: 570px;
+  left: 0;
+  width: 40%;
+  height: 300px;
+  background-color: var(--main-color);
+  border-bottom-right-radius: 100px;
+  z-index: -1;
+}
+@media (max-width: 1200px) {
+  .features::before {
+    width: 60%;
+  }
+}
+@media (max-width: 991px) {
+  .features::before {
+    top: 470px;
+  }
+}
+@media (max-width: 767px) {
+  .features::before {
+    top: 580px;
+  }
+}
+@media (max-width: 550px) {
+  .features::before {
+    top: 560px;
+  }
+}
+@media (max-width: 450px) {
+  .features::before {
+    top: 600px;
+    height: 200px;
+  }
+}
+.features .links {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.features .links li button {
+  position: relative;
+  padding: 20px 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #777;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.features .links li button.active,
+.features .links li button:hover {
+  color: var(--text-color);
+}
+.features .links li button::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--second-color);
+  opacity: 0;
+  transition: var(--main-transition);
+}
+.features .links li button.active::before,
+.features .links li button:hover::before {
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .features .links {
+    flex-direction: column;
+  }
+  .features .links li:nth-of-type(1) button {
+    border-top: 2px solid #a7a6ab;
+  }
+}
+.features .tabStyles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding-bottom: 60px;
+}
+.features .tabStyles h3 {
+  font-size: 30px;
+}
+.features .tabStyles h3,
+.features .tabStyles p {
+  text-align: left;
+}
+.features .tabStyles a {
+  width: fit-content;
+}
+@media (max-width: 1200px) {
+  .features .tabStyles {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .features .tabStyles h3,
+  .features .tabStyles p {
+    text-align: center;
+  }
+  .features .tabStyles a {
+    margin: auto;
+  }
+}
